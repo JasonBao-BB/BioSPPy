@@ -106,6 +106,7 @@ def ecg(signal=None, sampling_rate=1000., show=True):
     ts_tmpl = np.linspace(-0.2, 0.4, templates.shape[1], endpoint=False)
 
     # plot
+    # my_indexces = ss.find_peaks(rpeaks)
     if show:
         plotting.plot_ecg(ts=ts,
                           raw=signal,
